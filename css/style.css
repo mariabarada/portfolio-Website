@@ -24,7 +24,7 @@ html {
 
 
 body {
-    background-color: black;
+    background-color: white;
     font-family: Inter, sans-serif; /* this is the font I have imported at the top of this css file */
     color: white;
 }
@@ -40,7 +40,7 @@ body {
     height: 100%vh;
     margin: auto;
     align-items: center;
-    background-color: #070707;
+    background-color: #ffe3f6;
 }
 
 
@@ -74,7 +74,7 @@ body {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 100px;
-    border-top: solid var(--text-color);
+    border-top: solid white;
     width: 70%;
     align-content: center;
 
@@ -94,7 +94,7 @@ img {
     padding-left: 20px;
     width: 70%;
     float: right;
-    color: whitesmoke;
+    color: #4a124a;
 
 }
 
@@ -116,7 +116,7 @@ img {
 
 /* Design for the hyperlink reference to the pdf version of my resume */
 .downloadButt {
-    color: whitesmoke;
+    color: #390943;
     opacity: 0.7;
 
 }
@@ -212,14 +212,14 @@ img {
 
 
 .mediumTitles {
-    color: white;
+    color: #76627b;
     font-size: 17px;
     padding-bottom: 10px;
 }
 
 .itemBold {
     margin-left: 11px;
-    color: white;
+    color: #76627b;
     font-size: 17px;
     padding-bottom: 10px;
 
@@ -248,7 +248,7 @@ img {
     border-radius: 10px;
     width: 70%;
     height: 10px;
-    background-color: pink;
+    background-color: #d099a2;
     margin-bottom: 5px;
 }
 
@@ -271,7 +271,7 @@ img {
 /* Design used for the icons used*/
 
 .icons {
-    color: #e2c4e1;
+    color: #92004d9e;
     padding-right: 10px;
     margin-bottom: 10px;
 
