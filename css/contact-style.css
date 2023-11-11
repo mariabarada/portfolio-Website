@@ -1,0 +1,171 @@
+/* These lines Import fonts from google to use in my page */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Pacifico&family=Poppins:wght@400;500&display=swap');
+
+
+/* Clear design before starting: this would initially give every element 0 margins and paddings  */
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+/* ****************************************************** */
+/* Defining some variables that would apply throughout the html: would be helpful since I'll use these colors throughout the page*/
+
+html {
+    --primary-color: #ff0062e6;
+    /* Helps in avoiding redundancy*/
+    --text-color: #727171;
+}
+
+
+
+body {
+    background-color: #000000e8;
+    font-family: Inter, sans-serif;
+    /* this is one of the fonts I have imported at the top of this css file */
+    color: white;
+}
+
+
+
+
+/* Design for the container including the content of this page */
+
+.container {
+
+    margin: auto;
+    /* Equal margins from left and right */
+    display: block;
+    /* Normal display */
+    height: 600px;
+    margin: auto;
+    width: 75%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+
+
+/* Design for the div inside of my container */
+
+.content {
+    display: inline-block;
+    /* So I could have image and text in a column display*/
+    width: 100%;
+    background-color: rgb(10 9 9 / 49%);
+    background-size: cover;
+    background-image: url(../images/pink.png);
+    height: 100%;
+    background-blend-mode: exclusion;
+    /* Ensuring my background looks okay since it has a diff size from the content box */
+    background-position-x: center;
+}
+
+
+
+/* Design for the left content that would have the text part */
+.leftContent {
+    padding-left: 100px;
+    margin-top: 50px;
+    width: 50%;
+    float: left;
+    height: 100%;
+
+}
+
+/* Design for the right content that would have the image */
+.rightContent {
+    margin-top: 90px;
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding-right: 20px;
+
+}
+
+
+
+/* Design for the titles in My page */
+.title {
+    font-weight: 200;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: 'Noto Serif TC', serif;
+
+}
+
+/* Design for the : get in touch title */
+#title {
+    font-weight: 200;
+    padding-top: 30px;
+    font-size: xxx-large;
+    color: #b691b1;
+    padding-right: 20px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+
+
+/* Design for the : paper plane icon */
+
+.fa-regular,
+.far {
+    font-size: 80px;
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+/* Have the title next to my icon*/
+h1 {
+    display: inline-block;
+}
+
+
+/* Designing my image*/
+img {
+    padding-right: 10px;
+    padding-top: 110px;
+    width: 400px;
+    float: right;
+}
+
+
+/* Design for the basic texts */
+.description {
+    color: var(--text-color);
+    font-size: 15px;
+    padding-bottom: 13px;
+}
+
+
+
+/* Design for texts next to icons */
+.interest {
+    display: flex;
+    padding-top: 5px;
+}
+
+
+
+/* Design used for the icons used*/
+
+.icons {
+    color: #e2c4e1;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+}

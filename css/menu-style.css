@@ -1,0 +1,101 @@
+/* ****************************************************** */
+/* Design for the navigation bar of my page */
+
+body {
+    margin: 0px;
+    background-color: #000000e8;
+    font-family: Inter, sans-serif; /* this is the font I have imported at the top of this css file */
+    color: white;
+}
+
+
+/* Design for the bar on which the menu is located */
+.row{
+    display: block;
+    width: 100%;
+}
+
+/* Design for the bar on which the menu is located */
+#header{
+    background:#9e2e59e6;
+    height: 40px;
+    position: fixed;
+    top: 0; /* Start at top of the page */
+}
+
+/* Design for the span having the menu title */
+#dropdown-menu{
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 90px;
+    vertical-align: middle;
+    color: white;
+    background: #512334e6;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* Design for the drop-down menu content */
+.dropdown-content{
+    cursor: pointer; 
+    display: none;  /* Hide menu content unless hovered*/
+    background: #512334e6;
+    position: relative; /* Position is relative to the Menu */
+    min-width: 160px;
+    z-index: 1;
+    left: 0;
+    font-weight: normal;
+    font-size: medium;
+}
+
+/* Design for the list items that is the different page titles*/
+#dropdown-menu li{
+    font-family:  monospace;
+    text-align: left;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+#dropdown-menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+#dropdown-menu:hover .dropdown-content{
+    display: block;
+}
+
+#dropdown-menu li:hover{
+    background: #926a85;
+}
+
+
+/* Design for the Page references */
+.dropdown-content a{
+    color: rgba(255, 255, 255, 0.726);
+    text-decoration: none;
+}
+
+
+
+
+
+/* ********************** */
+/* Design the scrollbar */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b786b4;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }

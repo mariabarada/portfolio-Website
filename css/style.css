@@ -1,0 +1,365 @@
+/* This line Imports fonts from google to use in my page */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+
+/* Clear design before starting: this would initially give every element 0 margins and paddings  */
+
+* {
+   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+/* ****************************************************** */
+/* Defining some variables that would apply throughout the html: would be helpful since I'll use these colors throughout the page*/
+
+html {
+    --primary-color: #ff0062e6; /* Helps in avoiding redundancy*/
+    --text-color: #727171;
+}
+
+
+
+body {
+    background-color: black;
+    font-family: Inter, sans-serif; /* this is the font I have imported at the top of this css file */
+    color: white;
+}
+
+
+/* ****************************************************** */
+/* Defining the design for the main sections*/
+
+
+
+#container {
+    width: 80%;
+    height: 100%vh;
+    margin: auto;
+    align-items: center;
+    background-color: #070707;
+}
+
+
+#Profile_section {
+    padding: 10%;
+    display: inline-flex;
+    /*I learned it in a tutorial and it really came in hand for the grid structure I aspired to implement*/
+}
+
+
+#cvSection {
+    padding-right: 10%;
+    padding-left: 50px;
+    display: inline-flex;
+
+}
+
+
+#contactSection {
+    padding-right: 20%;
+    padding-left: 25%;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    display: inline-flex;
+
+}
+
+.seperator {
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+    border-top: solid var(--text-color);
+    width: 70%;
+    align-content: center;
+
+}
+
+
+/* ****************************************************** */
+/* Design for the components of the Profile section */
+
+img {
+    padding-top: 0px;
+    width: 30%;
+}
+
+.Profile_content {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 70%;
+    float: right;
+    color: whitesmoke;
+
+}
+
+
+.firstName {
+    font-weight: 200;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.lastName {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: xx-large;
+    text-transform: uppercase;
+    display: block;
+}
+
+
+/* Design for the hyperlink reference to the pdf version of my resume */
+.downloadButt {
+    color: whitesmoke;
+    opacity: 0.7;
+
+}
+
+
+.downloadButt:hover {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+.profileTitle {
+    text-transform: uppercase;
+    font-weight: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+/* ****************************************************** */
+/* Design for the CV section components*/
+
+.cvLeftContent {
+    width: 50%;
+    padding-right: 20px;
+
+
+}
+
+.cvRightContent {
+    width: 50%;
+    padding-left: 20px;
+    
+}
+
+
+
+/* ****************************************************** */
+/* Generic handful designs */
+
+.description {
+    color: var(--text-color);
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.descriptionSmall {
+    color: var(--text-color);
+    font-size: small;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+
+
+.title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: large;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* This design is used for divs having  an icon next to a text */
+
+.interest {
+    display: flex;
+    padding-top: 5px;
+}
+
+
+/* Class used to design the items of the ul stating the programming languages I know */
+.item {
+    margin-left: 11px;
+    font-size: large;
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+
+
+
+.languages {
+    display: flex;
+    width: 50%;
+}
+
+.miniTitles {
+    color: var(--text-color);
+    font-size: small;
+    padding-bottom: 10px;
+
+}
+
+
+.mediumTitles {
+    color: white;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.itemBold {
+    margin-left: 11px;
+    color: white;
+    font-size: 17px;
+    padding-bottom: 10px;
+
+}
+
+.location {
+    color: var(--text-color);
+    font-size: small;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.hobbies {
+    color: var(--text-color);
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+
+}
+
+
+/* ****************************************************** */
+/* Design used to create progress boxes*/
+.divOuter {
+    border-radius: 10px;
+    width: 70%;
+    height: 10px;
+    background-color: pink;
+    margin-bottom: 5px;
+}
+
+.divInner {
+    border-radius: 10px;
+    width: 90%;
+    height: 10px;
+    background-color: var(--primary-color);
+}
+
+/*Used for the arabic language to show mastery*/
+.divInner2 {
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: var(--primary-color);
+}
+
+/* ****************************************************** */
+/* Design used for the icons used*/
+
+.icons {
+    color: #e2c4e1;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+/* I was adjusting the responsiveness of the website and the media query that would add css styles 
+only after the width exceeds 730px (solely based on trying different screen sizes came in hand*/
+
+@media only screen and (max-width: 730px) {
+
+
+    #Profile_section {
+        flex-direction: column; /*this would ensure the flex is now column oriented so I could acheive
+                                 a vertical view of the grid (more readable for small-screen devices)
+        */
+    }
+
+    img {
+        width: 80%;
+        
+    }
+
+    .Profile_content {
+        padding-left: 20px;
+        text-align: justify;
+    }
+
+    #container {
+        margin-top: 100px;
+        height: fit-content;
+        width: 90%;
+
+    }
+
+    #cvSection {
+        flex-direction: column;
+
+    }
+
+    .cvleftContent {
+
+        width: 100%;
+    }
+
+    .cvRightContent {
+        padding-left: 0px;
+        width: 100%;
+        
+    }
+
+    #contactSection {
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    #navBar{
+        margin-bottom: 10px;
+    }
+
+    #navTitle{
+
+        font-size: small;
+        padding: 3px;
+        
+    }
+    .navButt{
+        font-size: small;
+        padding: 3px;
+    }
+
+    #currentPage{
+        font-size: small;
+        padding: 3px;
+    }
+
+
+    
+
+
+
+}
+
+@media only screen and (max-width: 391px){
+    #navTitle{
+
+        
+        display: none;
+    }
+}
+

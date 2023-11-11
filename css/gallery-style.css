@@ -1,0 +1,143 @@
+/* Defining useful designs */
+
+body {
+    margin: 0;
+    background-color: rgb(10 10 10 / 97%);
+    padding-bottom: 70px;
+}
+
+
+a {
+    color: black;
+}
+
+/* Design for the header of the page */
+#header {
+    background-color: rgba(0, 0, 0, 0.543);
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 1px;
+
+}
+
+/* Design for the My Vision Board phrase in the header */
+h4 {
+    font-family: serif;
+    font-weight: bold;
+    color: #f5f5dcb3;
+    margin-left: 10px;
+}
+
+/* Design for the images of my gallery */
+.my-img {
+    object-fit: cover;
+    /* Cover fit to conserve the image's ratio */
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+
+
+/* On hover expand the image */
+.my-img:hover {
+    height: 300px;
+    width: 300px;
+    transition: 0.5s linear;
+    /* For smoother effect */
+    cursor: pointer;
+}
+
+
+/* Design for the div containing images : A row in my gallery */
+.img-frame {
+    border-radius: 10px;
+    display: inline-block;
+    /* To have images on the same line */
+    padding: 3px;
+    margin-top: 50px;
+    padding-left: 16%;
+    padding-right: 15%;
+}
+
+
+
+/* Design for my lightbox that would popup*/
+.lightbox {
+    display: flex;
+    /* Easier for centering content */
+    align-items: center;
+    justify-content: center;
+    transform: scale(0, 0);
+    /* This is added so that when it pop up it would come from top left: it would not show at first since scale is 0,0 */
+    transition: transform 150ms ease-in-out;
+    /* A transition design */
+    transform-origin: top right;
+    /* When it fades: let it go to the top right */
+    padding-top: 2em;
+    padding-bottom: 2rem;
+    position: fixed;
+    /* Let it have a fixed position on my page */
+    top: 0;
+    left: 0;
+    color: white;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .25);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* This indicates that when the reference to the lightbox is targeted: we would change the scale thus it would appear on the screen: would come from left */
+.lightbox:target {
+    transform: scale(1, 1);
+    transform-origin: left;
+
+}
+
+/* Design for the container of the image */
+.lightbox__content {
+    width: 75%;
+    padding: 50px;
+    background: rgba(51, 48, 48, 0.342);
+    position: relative;
+    /* So that close would have an absolute position relative to this container*/
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Design for the image of the lightbox */
+.lightbox__image {
+    width: 500px;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+
+}
+
+
+/* Design for the close reference that would take me back to the page */
+.close {
+    position: absolute;
+    right: -1em;
+    top: -1em;
+    border: rgb(16, 16, 16) 2px solid;
+    display: flex;
+    width: 2em;
+    height: 2em;
+    background: rgb(185, 163, 163);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Add after the content of the close an x (design purposes) */
+.close::after {
+    content: 'x';
+    color: white;
+}

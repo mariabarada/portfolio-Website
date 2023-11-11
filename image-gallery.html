@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <title>
+        My Vision Board
+    </title>
+    <link rel="stylesheet" href="./css/gallery-style.css">
+    <link rel="stylesheet" href="./css/menu-style.css">
+</head>
+
+
+
+<body>
+
+    <!-- Page Header -->
+        <!-- Section 1 : the menu bar -->
+
+        <div class="row" id="header">
+
+            <div id="dropdown-menu">
+                <span>MENU</span>
+                <div class="dropdown-content">
+                    <ul>
+                        <!-- Reference to our Home page -->
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+    
+                        <!-- Reference to our Resume page -->
+                        <a href="resume.html">
+                            <li>Resume</li>
+                        </a>
+    
+                        <!-- Reference to our Vision Board page -->
+                        <a href="image-gallery.html">
+                            <li>Vision Board</li>
+                        </a>
+    
+                        <!-- Reference to our Contact Info page -->
+                        <a href="contact_page.html">
+                            <li>Contact Us</li>
+                        </a>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- Image Gallery: First Row -->
+    <div class="img-frame">
+        <!-- Each Image is within a reference to a specific lightbox (the one with this specific image displayed)-->
+        <!-- Image 1 -->
+        <a href="#item1">
+            <img src="./images/Designer.jpeg" class="my-img First"></a>
+        <!-- Image 2 -->
+        <a href="#item2">
+            <img src="./images/Reading.jpeg" class="my-img"></a>
+        <!-- Image 3 -->
+        <a href="#item3">
+            <img src="./images/Coding.jpeg" class="my-img"></a>
+    </div>
+
+    <!-- Added line for spacing -->
+    <br>
+
+
+    <!-- Image Gallery: Second Row -->
+    <div class="img-frame">
+
+        <!-- Each Image is within a reference to a specific lightbox (the one with this specific image displayed)-->
+        <!-- Image 4 -->
+        <a id href="#item4">
+            <img src="./images/Paris.jpeg" class="my-img First"></a>
+        <!-- Image 5 -->
+        <a href="#item5">
+            <img src="./images/Valedictorian.jpeg" class="my-img"></a>
+        <!-- Image 6 -->
+        <a href="#item6"><img src="./images/Money.jpeg" class="my-img"></a>
+
+    </div>
+
+
+    <!-- Implementing the lightboxes that would popup when their references are targeted -->
+
+    <!-- Lightbox for image 1 -->
+    <div class="lightbox" id="item1"> <!-- Giving it the id that the first images' a references -->
+        <div class="lightbox__content">
+            <a href="#" class="close"></a>
+            <!-- This is a reference to the actual html page with a 0,0 scale of the lightboxes (invisible) so we can go back -->
+            <img class="lightbox__image" src="./images/Designer.jpeg" alt="">
+
+        </div>
+    </div>
+
+    <!-- Lightbox for image 2 -->
+    <div class="lightbox" id="item2">
+        <div class="lightbox__content">
+            <a href="#" class="close"></a>
+            <img class="lightbox__image" src="./images/Reading.jpeg" alt="">
+
+        </div>
+    </div>
+
+    <!-- Lightbox for image 3 -->
+    <div class="lightbox" id="item3">
+        <div class="lightbox__content">
+            <a href="#" class="close"></a>
+            <img class="lightbox__image" src="./images/Coding.jpeg" alt="">
+
+        </div>
+    </div>
+
+    <!-- Lightbox for image 4 -->
+    <div class="lightbox" id="item4">
+        <div class="lightbox__content">
+            <a href="#" class="close"></a>
+            <img class="lightbox__image" src="./images/Paris.jpeg" alt="">
+
+        </div>
+    </div>
+
+    <!-- Lightbox for image 5 -->
+    <div class="lightbox" id="item5">
+        <div class="lightbox__content">
+            <a href="#" class="close"></a>
+            <img class="lightbox__image" src="./images/Valedictorian.jpeg" alt="">
+
+        </div>
+    </div>
+
+    <!-- Lightbox for image 6 -->
+    <div class="lightbox" id="item6">
+        <div class="lightbox__content">
+            <a href="#" class="close"></a>
+            <img class="lightbox__image" src="./images/Money.jpeg" alt="">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
