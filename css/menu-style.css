@@ -3,7 +3,7 @@
 
 body {
     margin: 0px;
-    background-color: #000000e8;
+    background-color: #ffffffe8;
     font-family: Inter, sans-serif; /* this is the font I have imported at the top of this css file */
     color: white;
 }
@@ -17,7 +17,7 @@ body {
 
 /* Design for the bar on which the menu is located */
 #header{
-    background:#9e2e59e6;
+    background:#d8bdc7e6;
     height: 40px;
     position: fixed;
     top: 0; /* Start at top of the page */
@@ -32,7 +32,7 @@ body {
     width: 90px;
     vertical-align: middle;
     color: white;
-    background: #512334e6;
+    background: #c49cabe6;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: x-large;
