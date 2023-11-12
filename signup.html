@@ -44,9 +44,9 @@
             <input type="password" name="confirmPassword" class="inputSignUp" id="confpass">
 
             <br>
-            <input type="radio" name="sex" checked id="r-male" value="m">
+            <input type="radio" name="sex" id="r-male" value="m">
             <label for="r-male">Male</label>
-            <input type="radio" name="sex" id="r-female" value="f">
+            <input type="radio" name="sex"  checked id="r-female" value="f">
             <label for="r-female">Female</label>
             <br>
             <label for="dbo">Date of Birth</label><br>
@@ -61,11 +61,44 @@
     </div>
 
     <script>
-        function SignUp(){
-            document.getElementById("signup-form").submit();
+        function SignUp() {
+            // Retrieve user input
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            var username = document.getElementById("Username").value;
+            var password = document.getElementById("pass").value;
+            var confirmPassword = document.getElementById("confpass").value;
+            var sex = document.querySelector('input[name="sex"]:checked');
+            var dob = document.getElementById("dbo").value;
 
+            // Basic validation
+            if (!firstname || !lastname || !username || !password || !confirmPassword || !sex || !dob) {
+                alert("Please fill in all the fields.");
+                return;
+            }
+
+            // Check if password and confirm password match
+            if (password !== confirmPassword) {
+                alert("Password and Confirm Password do not match.");
+                return;
+            }
+
+            // Date of Birth validation (assuming a minimum age of 18)
+            var dobDate = new Date(dob);
+            var currentDate = new Date();
+            var minAgeDate = new Date();
+            minAgeDate.setFullYear(minAgeDate.getFullYear() - 18);
+
+            if (dobDate >= currentDate || dobDate > minAgeDate) {
+                alert("Please enter a valid Date of Birth (minimum age: 18).");
+                return;
+            }
+
+            // If all validations pass, submit the form
+            document.getElementById("signup-form").submit();
         }
     </script>
+
 
 
 </body>
