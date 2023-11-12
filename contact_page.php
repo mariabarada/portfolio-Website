@@ -31,12 +31,12 @@
             <div class="dropdown-content">
                 <ul>
                     <!-- Reference to our Home page -->
-                    <a href="index.html">
+                    <a href="home.php">
                         <li>Home</li>
                     </a>
 
                     <!-- Reference to our Resume page -->
-                    <a href="resume.html">
+                    <a href="resume.php">
                         <li>Resume</li>
                     </a>
 
@@ -46,12 +46,26 @@
                     </a>
 
                     <!-- Reference to our Contact Info page -->
-                    <a href="contact_page.html">
+                    <a href="contact_page.php">
                         <li>Contact Us</li>
                     </a>
 
                 </ul>
             </div>
+        </div>
+        <!-- Welcome message and logout button -->
+        <div class="logout">
+            <?php
+            session_start();
+            // Check if the user is logged in
+            if (isset($_SESSION["username"])) {
+                echo 'Welcome, ' . $_SESSION["username"] . '!   <span > <a class="logBtn" href="./BE/logout.php">Logout</a></span>';
+            } else {
+                // Redirect to the login page if not logged in
+                header("Location: index.php");
+                exit;
+            }
+            ?>
         </div>
     </div>
 

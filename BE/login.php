@@ -22,7 +22,7 @@ session_start();
 
     if ($user_exists) {
         // Redirect to a secure page after successful login
-        header("Location: ../index.html");
+        header("Location: ../home.php");
         exit;
     } else {
         // User not found or incorrect password, handle accordingly (display error or redirect)

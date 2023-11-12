@@ -28,7 +28,7 @@
             // Handle username already taken (redirect or display an error)
             echo '<script>alert("Username is already taken. Please choose another username.");</script>';
             echo '<script>window.location.href="../signup.html";</script>';
-            // header("Location: ../signup.html?error=1");
+            
             exit;
         }
     }

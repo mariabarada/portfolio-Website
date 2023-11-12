@@ -81,6 +81,17 @@ body {
 }
 
 
+.logout{
+    float: right;
+    line-height: 40px;
+    display: inline;
+}
+
+.logBtn{
+    padding: 10px;
+    text-decoration: none;
+    color: #301938;
+}
 
 
 
