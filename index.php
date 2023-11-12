@@ -28,7 +28,7 @@ session_destroy();
           </h2>
 
           
-        <form action="BE/login.php" method="POST" id="login-form">
+        <form action="./BE/login.php" method="POST" id="login-form">
                 <label for="un">User Name</label>
                 <br>
                 <input type="text" name="username" id="un">
@@ -43,7 +43,7 @@ session_destroy();
 
          
         <h6> Create an account?</h6>    
-        <a href="#">Sign-Up</a>
+        <a href="signup.html">Sign-Up</a>
         </div>
 
         

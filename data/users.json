@@ -1,0 +1,16 @@
+[
+    {
+        "username": "maria.barada",
+        "fullname": "Maria Barada",
+        "password": "$2y$10$QiChzoJdJvJZggfKFFn9z.oEqoPE3cXkIT7HTvAn3OKspG4Nt15YC",
+        "sex": "f",
+        "dob": "2003-02-06"
+    },
+    {
+        "username": "maria.barada",
+        "fullname": "Maria Barada",
+        "password": "$2y$10$xOn8PIaGUHgADj6v0fH3Ru169KV9W0EcxVkmIQ2X76Azwf73AXXfa",
+        "sex": "f",
+        "dob": "2003-06-02"
+    }
+]

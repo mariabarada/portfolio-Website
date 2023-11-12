@@ -24,7 +24,7 @@
         </h2>
 
 
-        <form action="../BE/signup.php" method="POST" name="signup-form" id="signup-form">
+        <form action="./BE/signup.php" method="POST" name="signup-form" id="signup-form">
 
             <br>
             <input type="text" name="firstname" class="inputSignUp leftItem" id="firstname" placeholder="FirstName">
@@ -56,9 +56,16 @@
             <input type="button" value="Sign Up" class="mButton" onclick="SignUp()">
         </form>
 
-        <h6> Already have an account? <a href="#">Login</a></h6>
+        <h6> Already have an account? <a href="index.php">Login</a></h6>
 
     </div>
+
+    <script>
+        function SignUp(){
+            document.getElementById("signup-form").submit();
+
+        }
+    </script>
 
 
 </body>
