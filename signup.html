@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="./css/login-style.css">
+    <title>
+        SignUp
+    </title>
+
+
+</head>
+
+<body>
+
+
+    <div class="row" id="header">
+    </div>
+
+    <img src="./images/lovechick.png" alt="hi">
+
+
+    <div class="signupcontainer">
+        <h2 id="signUpTitle">Join in by signing up and let's create a connection!
+        </h2>
+
+
+        <form action="../BE/signup.php" method="POST" name="signup-form" id="signup-form">
+
+            <br>
+            <input type="text" name="firstname" class="inputSignUp leftItem" id="firstname" placeholder="FirstName">
+
+            <input type="text" name="lastname" class="inputSignUp" id="lastname" placeholder="LastName">
+            <br>
+
+
+            <input type="text" name="Username" class="inputSignUp leftItem" id="Username" placeholder="Username">
+
+
+
+            <input type="password" name="pass" class="inputSignUp" id="pass" placeholder="Password">
+            <br>
+            <label for="pass">Confirm Password</label>
+            <br>
+            <input type="password" name="confirmPassword" class="inputSignUp" id="confpass">
+
+            <br>
+            <input type="radio" name="sex" checked id="r-male" value="m">
+            <label for="r-male">Male</label>
+            <input type="radio" name="sex" id="r-female" value="f">
+            <label for="r-female">Female</label>
+            <br>
+            <label for="dbo">Date of Birth</label><br>
+            <input type="date" name="dbo" id="dbo" placeholder="Date of Birth">
+
+
+            <input type="button" value="Sign Up" class="mButton" onclick="SignUp()">
+        </form>
+
+        <h6> Already have an account? <a href="#">Login</a></h6>
+
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
