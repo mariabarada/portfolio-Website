@@ -1,4 +1,14 @@
-<!-- image-gallery.php -->
+<?php
+
+session_start();
+if (!isset($_SESSION["username"])) {
+    // Redirect to the login page if not logged in
+    header("Location: index.php");
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,15 +44,9 @@
         <!-- Welcome message and logout button -->
         <div class="logout">
             <?php
-            session_start();
-            // Check if the user is logged in
-            if (isset($_SESSION["username"])) {
-                echo 'Welcome, ' . $_SESSION["username"] . '!   <span > <a class="logBtn" href="./BE/logout.php">Logout</a></span>';
-            } else {
-                // Redirect to the login page if not logged in
-                header("Location: index.php");
-                exit;
-            }
+
+            echo 'Welcome, ' . $_SESSION["username"] . '!   <span > <a class="logBtn" href="./BE/logout.php">Logout</a></span>';
+
             ?>
         </div>
     </div>
@@ -67,11 +71,11 @@
                 <img src="./images/<?= $image ?>" class="my-img">
             </a>
             <?php
-        // Add a line break after the third image
-        if ($counter % 3 == 0) {
-            echo "<br> <br> <br> <br>";
-        }
-        ?>
+            // Add a line break after the third image
+            if ($counter % 3 == 0) {
+                echo "<br> <br> <br> <br>";
+            }
+            ?>
         <?php endforeach; ?>
     </div>
 

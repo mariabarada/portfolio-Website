@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+if (!isset($_SESSION["username"])) {
+    // Redirect to the login page if not logged in
+    header("Location: index.php");
+    exit;
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,9 +24,7 @@
     <link rel="stylesheet" href="./css/menu-style.css">
 
     <!-- Reference to the icons used in this document -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -56,15 +66,9 @@
         <!-- Welcome message and logout button -->
         <div class="logout">
             <?php
-            session_start();
-            // Check if the user is logged in
-            if (isset($_SESSION["username"])) {
-                echo 'Welcome, ' . $_SESSION["username"] . '!   <span > <a class="logBtn" href="./BE/logout.php">Logout</a></span>';
-            } else {
-                // Redirect to the login page if not logged in
-                header("Location: index.php");
-                exit;
-            }
+
+            echo 'Welcome, ' . $_SESSION["username"] . '!   <span > <a class="logBtn" href="./BE/logout.php">Logout</a></span>';
+
             ?>
         </div>
     </div>
