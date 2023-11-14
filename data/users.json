@@ -1,3 +1,10 @@
 [
-   
+    {
+        "username": "maria.barada",
+        "firstname": "Maria",
+        "lastname": "Barada",
+        "password": "$2y$10$e8B08SKL9uVSEjROqSY1qO9dRiGOvA4D\/vTkhDwq9c1xCvNPlah5C",
+        "sex": "f",
+        "dob": "2003-06-26"
+    }
 ]

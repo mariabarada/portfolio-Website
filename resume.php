@@ -82,7 +82,7 @@ if (!isset($_SESSION["username"])) {
         <div id="Profile_section">
 
             <!-- The profile picture part of this section -->
-            <img src="./images/profile.png" alt="Maria Barada">
+            <img src="./images/profile.png" alt="Maria Barada" class="pimg">
 
             <!-- The content part of this section -->
             <div class="Profile_content">

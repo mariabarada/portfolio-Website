@@ -20,7 +20,7 @@
     <div class="row" id="header">
     </div>
 
-    <img src="./images/chick-removebg-preview.png" alt="hi">
+    <img src="./images/chick-removebg-preview.png" class="myimg">
 
 
     <div class="container">

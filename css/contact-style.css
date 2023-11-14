@@ -133,9 +133,14 @@ h1 {
     display: inline-block;
 }
 
+img{
+    height: 2px;
+    width: 2px;
+}
+
 
 /* Designing my image*/
-img {
+img.myimg {
     width: 400px;
     border-radius: 10px;
     height: 400px;

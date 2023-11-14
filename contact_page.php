@@ -111,7 +111,7 @@ if (!isset($_SESSION["username"])) {
 
             <!-- Right content : that is the photo part -->
             <div class="rightContent">
-                <img src="./images/Background (7).png" alt="">
+                <img src="./images/Background (7).png " class="myimg">
             </div>
 
 

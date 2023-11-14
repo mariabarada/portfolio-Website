@@ -82,14 +82,17 @@ body{
     background-color: #d8aed85c;
     color: black;
 }
-img{
+img.myimg{
     width: 400px;
     float: left;
     margin-top: 150px;
     height: 400px;
     padding-left: 50px;
 }
-
+img{
+    width: 2px;
+    height: 2px;
+}
 
 input{
     margin-bottom: 20px;

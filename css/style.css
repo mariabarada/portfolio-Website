@@ -80,11 +80,14 @@ body {
 
 }
 
-
+img{
+    /* height: 2px; */
+    width: 2px;
+}
 /* ****************************************************** */
 /* Design for the components of the Profile section */
 
-img {
+img.pimg {
     padding-top: 0px;
     width: 30%;
 }
