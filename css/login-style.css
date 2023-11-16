@@ -121,8 +121,8 @@ input[type="button"]{
     cursor: pointer;
 }
 #signup-form label{
-    color: #7C838A;
-    font-size: 15px;
+    color: #212324e6;
+    font-size: 13px;
     font-family: Poppins;
     font-weight: 500;
 
