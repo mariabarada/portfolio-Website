@@ -93,8 +93,16 @@ body {
     color: #301938;
 }
 
+img.home{
+    
+    height: 300px;
+    width: 300px;
+}
 
-
+.home{
+    padding-top: 100px;
+    text-align: center;
+}
 /* ********************** */
 /* Design the scrollbar */
 

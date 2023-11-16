@@ -65,6 +65,11 @@ if (!isset($_SESSION["username"])) {
         </div>
 
 
+        <div class="home">
+        <img src="./images/happychick.jpg" alt="welcome" class="home">
+        </div>
+
+
 
 </body>
 
